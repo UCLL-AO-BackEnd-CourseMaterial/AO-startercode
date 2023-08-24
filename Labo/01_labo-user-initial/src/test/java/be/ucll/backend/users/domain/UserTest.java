@@ -2,8 +2,7 @@ package be.ucll.backend.users.domain;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.*;
 
 class UserTest {
 
@@ -114,8 +113,9 @@ class UserTest {
     // givenInvalidPassword_whenCreatingUser_thenUserIsCreatedWithDefaultPasswordt()
     // {
     // //when
-    // User amelia = new User(validNameAmelia, validAgeAmelia, validEmailAmelia, "
-    // ");
+    // String empty = " ";
+    // User amelia =
+    // new User(validNameAmelia, validAgeAmelia, validEmailAmelia, empty);
 
     // //then
     // assertNotNull(amelia);
@@ -180,8 +180,10 @@ class UserTest {
     // String result = amelia.toString();
 
     // //then
-    // assertEquals("Amelia is 44 years old and has as email
-    // amelia.anderson@ucll.be", result);
+    // String expected =
+    // "Amelia is 44 years old and has as email amelia.anderson@ucll.be";
+
+    // assertEquals(expected, result);
     // }
 
     // //getNumberOfMembershipYearsBetween2000And2999
