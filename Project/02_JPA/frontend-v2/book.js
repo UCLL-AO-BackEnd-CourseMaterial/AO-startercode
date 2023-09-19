@@ -50,7 +50,7 @@ fetchAndRenderAllBooks();
 
 document.getElementById("filterPrice").addEventListener("click", async () => {
     const search = document.getElementById("price").value;
-    await fetchBooks(`http://localhost:8080/api/book/search/priceMoreThen?price=${search}`);
+    await fetchBooks(`http://localhost:8080/api/book/search/priceMoreThan?price=${search}`);
     renderBooks(books);
 })
 
