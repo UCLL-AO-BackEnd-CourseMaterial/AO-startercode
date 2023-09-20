@@ -67,13 +67,11 @@ const fetchAndRenderAllBooks = async () => {
     clearFilters();
     clearStatistics();
     addStatistic(
-        `The most expensive book is: ${
-            books.length ? await getMostExpensive() : "No books in the library."
+        `The most expensive book is: ${books.length ? await getMostExpensive() : "No books in the library."
         }`
     );
     addStatistic(
-        `The total value of the collection is: ${
-            books.length ? await getTotalValue() : "No books in the library."
+        `The total value of the collection is: ${books.length ? await getTotalValue() : "No books in the library."
         }`
     );
 };
@@ -102,7 +100,7 @@ document.getElementById("filterPrice").addEventListener("click", async () => {
     document.getElementById("price-filter-error").innerHTML = "";
     const search = document.getElementById("price").value;
     await fetchBooks(
-        `http://localhost:8080/api/book/search/priceMoreThen?price=${search}`
+        `http://localhost:8080/api/book/search/priceMoreThan?price=${search}`
     );
     renderBooks();
 });
